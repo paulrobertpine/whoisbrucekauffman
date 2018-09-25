@@ -1,0 +1,36 @@
+{
+  "name": "whoisbrucekauffman",
+  "description": "whoisbrucekauffman",
+  "version": "1.0.0",
+  "author": "Paul Clifford",
+  "dependencies": {
+    "gatsby": "^2.0.0",
+    "gatsby-plugin-manifest": "^2.0.2",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sass": "^2.0.1",
+    "node-sass": "^4.9.3",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf .cache public",
+    "develop": "npm run clean && gatsby develop",
+    "build": "npm run clean && gatsby build",
+    "serve": "gatsby serve",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\""
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "rimraf": "^2.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulrobertpine/whoisbrucekauffman"
+  }
+}

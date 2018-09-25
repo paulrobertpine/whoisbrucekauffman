@@ -1,0 +1,48 @@
+// Woodford Sans
+@font-face {
+  font-family: "woodford_bourne";
+  src: url("../fonts/paulo_goode_-_woodford_bourne-webfont.woff2")
+      format("woff2"),
+    url("../fonts/paulo_goode_-_woodford_bourne-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "woodford_bourne";
+  src: url("../fonts/paulo_goode_-_woodford_bourne_bold-webfont.woff2")
+      format("woff2"),
+    url("../fonts/paulo_goode_-_woodford_bourne_bold-webfont.woff")
+      format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "woodford_bourne";
+  src: url("../fonts/paulo_goode_-_woodford_bourne_italic-webfont.woff2")
+      format("woff2"),
+    url("../fonts/paulo_goode_-_woodford_bourne_italic-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+// Neato Serif
+@font-face {
+  font-family: "neato_serif";
+  src: url("../fonts/adam_ladd_-_neato_serif_regular-webfont.woff2")
+      format("woff2"),
+    url("../fonts/adam_ladd_-_neato_serif_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neato_serif";
+  src: url("../fonts/adam_ladd_-_neato_serif_italic-webfont.woff2")
+      format("woff2"),
+    url("../fonts/adam_ladd_-_neato_serif_italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}

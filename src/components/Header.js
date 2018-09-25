@@ -8,13 +8,9 @@ const Header = props => (
     </div>
     <div className="content">
       <div className="inner">
-        <h1>Dimension</h1>
+        <h1>Who Is Bruce Kauffman?</h1>
         <p>
-          A fully responsive site template designed by{' '}
-          <a href="https://html5up.net">HTML5 UP</a> and released
-          <br />
-          for free under the{' '}
-          <a href="https://html5up.net/license">Creative Commons</a> license.
+        an anthology film that explores and celebrates Kingston, Ontario’s vibrant poetic community through the eyes of a poet impresario who manages to be both ubiquitous and elusive.
         </p>
       </div>
     </div>

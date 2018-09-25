@@ -153,11 +153,6 @@ class Main extends React.Component {
                 <span className="label">Instagram</span>
               </a>
             </li>
-            <li>
-              <a href="#" className="icon fa-github">
-                <span className="label">GitHub</span>
-              </a>
-            </li>
           </ul>
           {close}
         </article>

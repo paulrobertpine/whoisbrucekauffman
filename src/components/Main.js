@@ -1,9 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import pic01 from "../images/pic01.jpg";
+import pic02 from "../images/pic02.jpg";
+import pic03 from "../images/pic03.jpg";
 
 class Main extends React.Component {
   render() {
@@ -11,56 +11,82 @@ class Main extends React.Component {
       <div
         className="close"
         onClick={() => {
-          this.props.onCloseArticle()
+          this.props.onCloseArticle();
         }}
       />
-    )
+    );
 
     return (
       <div
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
         <article
-          id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          id="about"
+          className={`${this.props.article === "about" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
+          <p>Who Is Bruce Kauman? is an anthology film that explores and celebrates
+          Kingston, Ontario’s vibrant poetic community through the eyes of a
+          poet impresario who manages to be both ubiquitous and elusive.
+          Kauman’s influence is broad and longstanding – if one proceeds from
+          any given place on an imagined map of Kingston’s poetry scene, then
+          Bruce will show up somewhere along the trail, humbly and unassumingly
+          encouraging all local writers. In this film, the city’s most
+          accomplished film makers and other artists collaborate with some of
+          Kingston’s finest poets to interpret their poems in short cinematic
+          pieces. They join Kauman in giving us a snapshot of the city and its
+          poetry.</p>
+
+          <h3>FEATURING KINGSTON POETS</h3>   
+          
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
+            <ul>
+              <li>Steven Heighton</li>
+              <li>Sarah Tsiang</li>
+              <li>Fernando Monte</li>
+              <li>Sadiqa de Meijer</li>
+              <li>Alyssa Cooper</li>
+              <li>Armand Ruo</li>
+              <li>Helen Humphreys</li>
+              <li>Jason Heroux </li>
+            </ul>
           </p>
+          
+          <h3>FEATURING KINGSTON FILM MAKERS </h3> 
+        
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            <ul>
+              <li>Elisa Paloschi</li>
+              <li>Nuno Ramalho</li>
+              <li>Julia Krolik</li>
+              <li>Owen Fernley</li>
+              <li>Clarke Mackey</li>
+              <li>Armand Ruo</li>
+              <li>Don Maynard</li>
+              <li>Craig Berggold</li>
+              <li>Max Montalvo</li>
+              <li>Josh Lyon</li>
+              <li>James Greatrex</li>
+
+            </ul>
           </p>
+
           {close}
         </article>
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "work" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Work</h2>
           <span className="image main">
@@ -86,10 +112,10 @@ class Main extends React.Component {
 
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "about" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">About</h2>
           <span className="image main">
@@ -109,10 +135,10 @@ class Main extends React.Component {
 
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "contact" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Contact</h2>
           <form method="post" action="#">
@@ -157,7 +183,7 @@ class Main extends React.Component {
           {close}
         </article>
       </div>
-    )
+    );
   }
 }
 
@@ -166,7 +192,7 @@ Main.propTypes = {
   article: PropTypes.string,
   articleTimeout: PropTypes.bool,
   onCloseArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-}
+  timeout: PropTypes.bool
+};
 
-export default Main
+export default Main;

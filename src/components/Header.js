@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import logo from "../images/WIBK_Question_Mark_White.svg";
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-diamond" />
+      <img src={logo} alt="site logo"/>
     </div>
     <div className="content">
       <div className="inner">
@@ -20,30 +21,40 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('intro')
-            }}
-          >
-            Intro
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle('work')
-            }}
-          >
-            Work
-          </a>
-        </li>
-        <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
             About
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('trailer')
+            }}
+          >
+            Trailer
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('stills')
+            }}
+          >
+            Stills
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle('partners')
+            }}
+          >
+            Partners
           </a>
         </li>
         <li>

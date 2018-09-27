@@ -69,13 +69,14 @@
     overflow: hidden;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
-    background-color: black;
+    // background-color: black;
 
     img {
       width: 80px;
     }
 
-    @media screen and (max-width: 737px) {
+    @include breakpoint(small) {
+    //@media screen and (max-width: 737px) { // fix, use scss breakpoints
       img {
         width: 30px;
         padding-top: 9px;

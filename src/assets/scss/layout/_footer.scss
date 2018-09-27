@@ -37,4 +37,9 @@
   .body.is-loading & {
     opacity: 0;
   }
+
+  .colophon {
+    max-width: 400px;
+    margin: 0 auto;
+  }
 }

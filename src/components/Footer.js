@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import wibkPencil from "../images/WIBK_Pencil_White_trans.svg";
+
 const Footer = props => (
   <footer id="footer" style={props.timeout ? { display: "none" } : {}}>
     <ul className="icons">
@@ -32,6 +34,9 @@ const Footer = props => (
         </a>
       </li>
     </ul>
+    <div className="colophon">
+      <img src={wibkPencil} alt="colophon" />
+    </div>
   </footer>
 );
 

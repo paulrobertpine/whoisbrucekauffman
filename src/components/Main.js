@@ -1,7 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+import YouTube from "react-youtube";
+
 import wibkBlack from "../images/WIBK_Full_White.svg";
+
+const YouTubeOpts = {
+  height: '380px',
+  width: '100%',
+  playerVars: { // https://developers.google.com/youtube/player_parameters
+    autoplay: 0
+  }
+};
 
 class Main extends React.Component {
   render() {
@@ -90,10 +100,10 @@ class Main extends React.Component {
           <h2 className="major">Trailer</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
           <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
+            <YouTube
+              videoId="My5deiCdLvE"
+              opts={YouTubeOpts}    
+            />
           </p>
           {close}
         </article>
@@ -133,7 +143,7 @@ class Main extends React.Component {
           </p>
           {close}
         </article>
-        
+
         <article
           id="contact"
           className={`${this.props.article === "contact" ? "active" : ""} ${

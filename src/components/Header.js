@@ -11,7 +11,7 @@ const Header = props => (
       <div className="inner">
         <h1>Who Is Bruce Kauffman?</h1>
         <p>
-        an anthology film that explores and celebrates Kingston, Ontario’s vibrant poetic community through the eyes of a poet impresario who manages to be both ubiquitous and elusive.
+        An anthology film that explores and celebrates Kingston, Ontario’s vibrant poetic community through the eyes of a poet impresario who manages to be both ubiquitous and elusive.
         </p>
       </div>
     </div>

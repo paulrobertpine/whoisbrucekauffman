@@ -42,4 +42,10 @@
     max-width: 400px;
     margin: 0 auto;
   }
+
+  @include breakpoint(small) {
+    .colophon {
+      max-width: 200px;
+    }
+  }
 }

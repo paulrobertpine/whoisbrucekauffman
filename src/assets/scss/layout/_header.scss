@@ -69,16 +69,15 @@
     overflow: hidden;
     border: solid _size(border-width) _palette(border);
     border-radius: 100%;
-    // background-color: black;
 
     img {
-      width: 80px;
+      width: 90px;
     }
 
     @include breakpoint(small) {
     //@media screen and (max-width: 737px) { // fix, use scss breakpoints
       img {
-        width: 30px;
+        width: 35px;
         padding-top: 9px;
       }
     }
@@ -117,10 +116,11 @@
     }
 
     p {
-      text-transform: uppercase;
+      // text-transform: uppercase;
       letter-spacing: _font(letter-spacing);
-      font-size: 0.8rem;
+      font-size: 1rem;
       line-height: 2;
+      text-align: left !important;
     }
   }
 

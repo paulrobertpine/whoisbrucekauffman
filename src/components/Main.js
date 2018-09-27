@@ -6,15 +6,17 @@ import YouTube from "react-youtube";
 import wibkBlack from "../images/WIBK_Full_White.svg";
 
 const YouTubeOpts = {
-  height: '380px',
-  width: '100%',
-  playerVars: { // https://developers.google.com/youtube/player_parameters
+  height: "380px",
+  width: "100%",
+  playerVars: {
+    // https://developers.google.com/youtube/player_parameters
     autoplay: 0
   }
 };
 
 class Main extends React.Component {
   render() {
+
     let close = (
       <div
         className="close"
@@ -35,6 +37,7 @@ class Main extends React.Component {
             this.props.articleTimeout ? "timeout" : ""
           }`}
         >
+        {close}
           <h2 className="major">About</h2>
           <span className="image main">
             <img src={wibkBlack} alt="" />
@@ -55,38 +58,32 @@ class Main extends React.Component {
 
           <h3>FEATURING KINGSTON POETS</h3>
 
-          <p>
-            <ul>
-              <li>Steven Heighton</li>
-              <li>Sarah Tsiang</li>
-              <li>Fernando Monte</li>
-              <li>Sadiqa de Meijer</li>
-              <li>Alyssa Cooper</li>
-              <li>Armand Ruo</li>
-              <li>Helen Humphreys</li>
-              <li>Jason Heroux </li>
-            </ul>
-          </p>
+          <ul>
+            <li>Steven Heighton</li>
+            <li>Sarah Tsiang</li>
+            <li>Fernando Monte</li>
+            <li>Sadiqa de Meijer</li>
+            <li>Alyssa Cooper</li>
+            <li>Armand Ruo</li>
+            <li>Helen Humphreys</li>
+            <li>Jason Heroux </li>
+          </ul>
 
           <h3>FEATURING KINGSTON FILM MAKERS </h3>
 
-          <p>
-            <ul>
-              <li>Elisa Paloschi</li>
-              <li>Nuno Ramalho</li>
-              <li>Julia Krolik</li>
-              <li>Owen Fernley</li>
-              <li>Clarke Mackey</li>
-              <li>Armand Ruo</li>
-              <li>Don Maynard</li>
-              <li>Craig Berggold</li>
-              <li>Max Montalvo</li>
-              <li>Josh Lyon</li>
-              <li>James Greatrex</li>
-            </ul>
-          </p>
-
-          {close}
+          <ul>
+            <li>Elisa Paloschi</li>
+            <li>Nuno Ramalho</li>
+            <li>Julia Krolik</li>
+            <li>Owen Fernley</li>
+            <li>Clarke Mackey</li>
+            <li>Armand Ruo</li>
+            <li>Don Maynard</li>
+            <li>Craig Berggold</li>
+            <li>Max Montalvo</li>
+            <li>Josh Lyon</li>
+            <li>James Greatrex</li>
+          </ul>
         </article>
 
         <article
@@ -94,17 +91,16 @@ class Main extends React.Component {
           className={`${this.props.article === "trailer" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          // style={{ display: "none" }}
         >
+          {close}
           <h2 className="major">Trailer</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
-          <p>
+
             <YouTube
               videoId="My5deiCdLvE"
               opts={YouTubeOpts}    
             />
-          </p>
-          {close}
+
         </article>
 
         <article
@@ -112,8 +108,8 @@ class Main extends React.Component {
           className={`${this.props.article === "stills" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          // style={{ display: "none" }}
         >
+          {close}
           <h2 className="major">Stills</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
           <p>
@@ -122,7 +118,7 @@ class Main extends React.Component {
             urna nisi, fringila lorem et vehicula lacinia quam. Integer
             sollicitudin mauris nec lorem luctus ultrices.
           </p>
-          {close}
+          
         </article>
 
         <article
@@ -130,8 +126,8 @@ class Main extends React.Component {
           className={`${this.props.article === "partners" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          // style={{ display: "none" }}
         >
+          {close}
           <h2 className="major">Partners</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
           <p>
@@ -140,7 +136,6 @@ class Main extends React.Component {
             urna nisi, fringila lorem et vehicula lacinia quam. Integer
             sollicitudin mauris nec lorem luctus ultrices.
           </p>
-          {close}
         </article>
 
         <article
@@ -148,13 +143,16 @@ class Main extends React.Component {
           className={`${this.props.article === "contact" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          // style={{ display: "none" }}
         >
+          {close}
           <h2 className="major">Contact</h2>
           <p>Questions? Comments?</p>
           <p>
             <a href="mailto:media@skeletonparkarts.org">
-              <h3 className="icon fa-envelope">media@skeletonparkarts.org</h3>
+              <span className="icon fa-envelope">
+                {" "}
+                media@skeletonparkarts.org
+              </span>
             </a>
           </p>
           <ul className="icons">
@@ -174,7 +172,6 @@ class Main extends React.Component {
               </a>
             </li>
           </ul>
-          {close}
         </article>
       </div>
     );

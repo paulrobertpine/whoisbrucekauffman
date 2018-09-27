@@ -34,7 +34,6 @@ class Main extends React.Component {
           className={`${this.props.article === "about" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
         >
           <h2 className="major">About</h2>
           <span className="image main">
@@ -95,7 +94,7 @@ class Main extends React.Component {
           className={`${this.props.article === "trailer" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
+          // style={{ display: "none" }}
         >
           <h2 className="major">Trailer</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
@@ -113,7 +112,7 @@ class Main extends React.Component {
           className={`${this.props.article === "stills" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
+          // style={{ display: "none" }}
         >
           <h2 className="major">Stills</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
@@ -131,7 +130,7 @@ class Main extends React.Component {
           className={`${this.props.article === "partners" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
+          // style={{ display: "none" }}
         >
           <h2 className="major">Partners</h2>
           <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
@@ -149,7 +148,7 @@ class Main extends React.Component {
           className={`${this.props.article === "contact" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: "none" }}
+          // style={{ display: "none" }}
         >
           <h2 className="major">Contact</h2>
           <p>Questions? Comments?</p>

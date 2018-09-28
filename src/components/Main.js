@@ -1,9 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from "react"
+import PropTypes from "prop-types"
 
-import YouTube from "react-youtube";
+import YouTube from "react-youtube"
+import Slider from 'react-slick'
+import Still from './Still'
 
-import wibkBlack from "../images/WIBK_Full_White.svg";
+import wibkBlack from "../images/WIBK_Full_White.svg"
+
+import bruce from "../images/bruce.png"
+import heroux from "../images/heroux.jpg"
+import krolik from "../images/krolik.png"
+import mackey from "../images/mackey.png"
+import maynard from "../images/maynard.png"
+import teaser from "../images/teaser.png"
 
 const YouTubeOpts = {
   height: "380px",
@@ -17,6 +26,17 @@ const YouTubeOpts = {
 class Main extends React.Component {
   render() {
 
+    const settings = {
+      arrows: false,
+      autoplay: true,
+      speed: 1000,
+      className: "center",
+      centerMode: true,
+      vertical: true,
+      infinite: true,
+      slidesToShow: 2
+    };
+
     let close = (
       <div
         className="close"
@@ -27,6 +47,7 @@ class Main extends React.Component {
     );
 
     return (
+      
       <div
         id="main"
         style={this.props.timeout ? { display: "flex" } : { display: "none" }}
@@ -40,7 +61,7 @@ class Main extends React.Component {
         {close}
           <h2 className="major">About</h2>
           <span className="image main">
-            <img src={wibkBlack} alt="" />
+            <img src={wibkBlack} alt="Who Is Bruce Kaufmann logo" />
           </span>
           <p>
             Who Is Bruce Kauman? is an anthology film that explores and
@@ -94,13 +115,10 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="major">Trailer</h2>
-          <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
-
-            <YouTube
-              videoId="My5deiCdLvE"
-              opts={YouTubeOpts}    
-            />
-
+          <YouTube
+            videoId="My5deiCdLvE"
+            opts={YouTubeOpts}    
+          />
         </article>
 
         <article
@@ -110,14 +128,17 @@ class Main extends React.Component {
           }`}
         >
           {close}
+
           <h2 className="major">Stills</h2>
-          <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
+          <Slider {...settings}>
+            <Still image={bruce} />
+            <Still image={heroux} />
+            <Still image={krolik} />
+            <Still image={teaser} />
+            <Still image={mackey} />
+            <Still image={maynard} />
+   
+          </Slider>
           
         </article>
 
@@ -129,7 +150,6 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="major">Partners</h2>
-          <span className="image main">{/* <img src={pic02} alt="" /> */}</span>
           <p>
             Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
             at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent

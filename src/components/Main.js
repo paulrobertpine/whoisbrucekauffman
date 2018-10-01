@@ -1,21 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// third-party components
 import YouTube from "react-youtube";
 import Slider from "react-slick";
+
+// custom components
 import Still from "./Still";
 
+// images
 import wibkBlack from "../images/WIBK_Full_White.svg";
-
-import bruce from "../images/bruce.png";
-import heroux from "../images/heroux.jpg";
-import krolik from "../images/krolik.png";
-import mackey from "../images/mackey.png";
-import maynard from "../images/maynard.png";
-import teaser from "../images/teaser.png";
+import bruce from "../images/stills/bruce.png";
+import heroux from "../images/stills/heroux.jpg";
+import krolik from "../images/stills/krolik.png";
+import mackey from "../images/stills/mackey.png";
+import maynard from "../images/stills/maynard.png";
+import teaser from "../images/stills/teaser.png";
+import KCCF from "../images/partners/KCFF_logo-white.png";
+import KWF from "../images/partners/KWF.png";
+import SPAF from "../images/partners/SPAF_logo.png";
 
 const YouTubeOpts = {
-  height: "380px",
+  height: "370px",
   width: "100%",
   playerVars: {
     // https://developers.google.com/youtube/player_parameters
@@ -28,6 +34,7 @@ class Main extends React.Component {
     const settings = {
       arrows: false,
       autoplay: true,
+      pauseOnHover: false,
       speed: 1000,
       className: "center",
       centerMode: true,
@@ -55,6 +62,7 @@ class Main extends React.Component {
           className={`${this.props.article === "about" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
+          style={{ display: "none" }}
         >
           {close}
           <h2 className="major">About</h2>
@@ -110,6 +118,7 @@ class Main extends React.Component {
           className={`${this.props.article === "trailer" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
+          style={{ display: "none" }}
         >
           {close}
           <h2 className="major">Trailer</h2>
@@ -121,17 +130,19 @@ class Main extends React.Component {
           className={`${this.props.article === "stills" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
+          style={{ display: "none" }}
         >
           {close}
 
           <h2 className="major">Stills</h2>
+          <p>click to open/download</p>
           <Slider {...settings}>
-            <Still image={bruce} />
-            <Still image={heroux} />
-            <Still image={krolik} />
-            <Still image={teaser} />
-            <Still image={mackey} />
-            <Still image={maynard} />
+            <Still image={bruce} alt="bruce"/>
+            <Still image={heroux} alt="heroux" />
+            <Still image={krolik} alt="krolik" />
+            <Still image={teaser} alt="teaser" />
+            <Still image={mackey} alt="mackey" />
+            <Still image={maynard} alt="maynard" />
           </Slider>
         </article>
 
@@ -140,15 +151,14 @@ class Main extends React.Component {
           className={`${this.props.article === "partners" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
+          style={{ display: "none" }}
         >
           {close}
           <h2 className="major">Partners</h2>
-          <p>
-            Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu,
-            at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent
-            urna nisi, fringila lorem et vehicula lacinia quam. Integer
-            sollicitudin mauris nec lorem luctus ultrices.
-          </p>
+
+          <Still image={KCCF} alt="KCCF" />
+          <Still image={KWF} alt="KWF" />
+          <Still image={SPAF} alt="SPAF" />
         </article>
 
         <article
@@ -156,6 +166,7 @@ class Main extends React.Component {
           className={`${this.props.article === "contact" ? "active" : ""} ${
             this.props.articleTimeout ? "timeout" : ""
           }`}
+          style={{ display: "none" }}
         >
           {close}
           <h2 className="major">Contact</h2>

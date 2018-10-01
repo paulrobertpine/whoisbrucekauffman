@@ -10,6 +10,7 @@ const Footer = props => (
         <a
           href="https://twitter.com/whoisbrucefilm"
           className="icon fa-twitter"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span className="label">Twitter</span>
@@ -19,6 +20,7 @@ const Footer = props => (
         <a
           href="https://www.facebook.com/whoisbrucekauffmanfilm/"
           className="icon fa-facebook"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span className="label">Facebook</span>
@@ -28,6 +30,7 @@ const Footer = props => (
         <a
           href="https://www.instagram.com/whoisbrucekauffman/"
           className="icon fa-instagram"
+          rel="noopener noreferrer"
           target="_blank"
         >
           <span className="label">Instagram</span>

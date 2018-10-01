@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import logo from "../images/WIBK_Question_Mark_White_trans.svg";
 
+/* eslint-disable */
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">

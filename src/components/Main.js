@@ -1,18 +1,18 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
 
-import YouTube from "react-youtube"
-import Slider from 'react-slick'
-import Still from './Still'
+import YouTube from "react-youtube";
+import Slider from "react-slick";
+import Still from "./Still";
 
-import wibkBlack from "../images/WIBK_Full_White.svg"
+import wibkBlack from "../images/WIBK_Full_White.svg";
 
-import bruce from "../images/bruce.png"
-import heroux from "../images/heroux.jpg"
-import krolik from "../images/krolik.png"
-import mackey from "../images/mackey.png"
-import maynard from "../images/maynard.png"
-import teaser from "../images/teaser.png"
+import bruce from "../images/bruce.png";
+import heroux from "../images/heroux.jpg";
+import krolik from "../images/krolik.png";
+import mackey from "../images/mackey.png";
+import maynard from "../images/maynard.png";
+import teaser from "../images/teaser.png";
 
 const YouTubeOpts = {
   height: "380px",
@@ -25,7 +25,6 @@ const YouTubeOpts = {
 
 class Main extends React.Component {
   render() {
-
     const settings = {
       arrows: false,
       autoplay: true,
@@ -47,7 +46,6 @@ class Main extends React.Component {
     );
 
     return (
-      
       <div
         id="main"
         style={this.props.timeout ? { display: "flex" } : { display: "none" }}
@@ -58,7 +56,7 @@ class Main extends React.Component {
             this.props.articleTimeout ? "timeout" : ""
           }`}
         >
-        {close}
+          {close}
           <h2 className="major">About</h2>
           <span className="image main">
             <img src={wibkBlack} alt="Who Is Bruce Kaufmann logo" />
@@ -115,10 +113,7 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="major">Trailer</h2>
-          <YouTube
-            videoId="My5deiCdLvE"
-            opts={YouTubeOpts}    
-          />
+          <YouTube videoId="My5deiCdLvE" opts={YouTubeOpts} />
         </article>
 
         <article
@@ -137,9 +132,7 @@ class Main extends React.Component {
             <Still image={teaser} />
             <Still image={mackey} />
             <Still image={maynard} />
-   
           </Slider>
-          
         </article>
 
         <article
@@ -177,17 +170,32 @@ class Main extends React.Component {
           </p>
           <ul className="icons">
             <li>
-              <a href="#" className="icon fa-twitter">
+              <a
+                href="https://twitter.com/whoisbrucefilm"
+                className="icon fa-twitter"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <span className="label">Twitter</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-facebook">
+              <a
+                href="https://www.facebook.com/whoisbrucekauffmanfilm/"
+                className="icon fa-facebook"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <span className="label">Facebook</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon fa-instagram">
+              <a
+                href="https://www.instagram.com/whoisbrucekauffman/"
+                className="icon fa-instagram"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 <span className="label">Instagram</span>
               </a>
             </li>

@@ -5,7 +5,7 @@ html {
   font-size: 16pt;
 
   @include breakpoint(xlarge) {
-    font-size: 13pt;
+    font-size: 12pt;
   }
 
   @include breakpoint(small) {

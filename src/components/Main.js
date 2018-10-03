@@ -8,8 +8,10 @@ import Slider from "react-slick";
 // custom components
 import Still from "./Still";
 
-// images
+// about
 import wibkBlack from "../images/WIBK_Full_White.svg";
+
+// stills
 import bruce from "../images/stills/bruce.png";
 import bruceWaterfront from "../images/stills/bruce-waterfront-still.jpg";
 import heroux from "../images/stills/heroux.jpg";
@@ -17,6 +19,9 @@ import krolik from "../images/stills/krolik.png";
 import mackey from "../images/stills/mackey.png";
 import maynard from "../images/stills/maynard.png";
 import teaser from "../images/stills/teaser.png";
+import stiltwalker from "../images/stills/stiltwalker.png";
+
+//partners
 import KCCF from "../images/partners/KCFF_logo-white.png";
 import KWF from "../images/partners/KWF.png";
 import SPAF from "../images/partners/SPAF_logo.png";
@@ -120,6 +125,7 @@ class Main extends React.Component {
             <li>Sadiqa de Meijer</li>
             <li>Sarah Tsiang</li>
             <li>Steven Heighton</li>
+            <li>Wanda Praamsma</li>
           </ul>
 
           <h3>FEATURING KINGSTON FILM MAKERS </h3>
@@ -129,6 +135,7 @@ class Main extends React.Component {
             <li>Craig Berggold</li>
             <li>Don Maynard</li>
             <li>Elisa Paloschi</li>
+            <li>Fernando Monte</li>
             <li>James Greatrex</li>
             <li>Josh Lyon</li>
             <li>Julia Krolik</li>
@@ -136,7 +143,6 @@ class Main extends React.Component {
             <li>Max Montalvo</li>
             <li>Nuno Ramalho</li>
             <li>Owen Fernley</li>
-            <li>Wanda Praamsma</li>
           </ul>
         </article>
 
@@ -164,11 +170,12 @@ class Main extends React.Component {
           <h2 className="major">Stills</h2>
           <p>click to open/download</p>
           <Slider {...settings}>
+            <Still image={teaser} alt="teaser" />
             <Still image={bruce} alt="bruce" />
+            <Still image={stiltwalker} alt="stiltwalker" />
             <Still image={bruceWaterfront} alt="bruceWaterfront" />
             <Still image={heroux} alt="heroux" />
             <Still image={krolik} alt="krolik" />
-            <Still image={teaser} alt="teaser" />
             <Still image={mackey} alt="mackey" />
             <Still image={maynard} alt="maynard" />
           </Slider>

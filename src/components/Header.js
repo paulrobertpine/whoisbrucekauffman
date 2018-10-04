@@ -1,18 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 import logo from "../images/WIBK_Question_Mark_White_trans.svg";
 
 /* eslint-disable */
 const Header = props => (
-  <header id="header" style={props.timeout ? { display: 'none' } : {}}>
+  <header id="header" style={props.timeout ? { display: "none" } : {}}>
     <div className="logo">
-      <img src={logo} alt="site logo"/>
+      <img src={logo} alt="site logo" />
     </div>
     <div className="content">
       <div className="inner">
         <h1>Who Is Bruce Kauffman?</h1>
         <p>
-        An anthology film that explores and celebrates Kingston, Ontario’s vibrant poetic community through the eyes of a poet impresario who manages to be both ubiquitous and elusive.
+          An anthology film that explores and celebrates Kingston, Ontario’s
+          vibrant poetic community through the eyes of a poet impresario who
+          manages to be both ubiquitous and elusive.
         </p>
       </div>
     </div>
@@ -22,7 +24,7 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle("about");
             }}
           >
             About
@@ -32,7 +34,7 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('trailer')
+              props.onOpenArticle("trailer");
             }}
           >
             Trailer
@@ -42,7 +44,7 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('stills')
+              props.onOpenArticle("stills");
             }}
           >
             Stills
@@ -52,7 +54,7 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('partners')
+              props.onOpenArticle("partners");
             }}
           >
             Partners
@@ -62,7 +64,17 @@ const Header = props => (
           <a
             href="javascript:;"
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle("news");
+            }}
+          >
+            News
+          </a>
+        </li>
+        <li>
+          <a
+            href="javascript:;"
+            onClick={() => {
+              props.onOpenArticle("contact");
             }}
           >
             Contact
@@ -71,11 +83,11 @@ const Header = props => (
       </ul>
     </nav>
   </header>
-)
+);
 
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
-  timeout: PropTypes.bool,
-}
+  timeout: PropTypes.bool
+};
 
-export default Header
+export default Header;

@@ -20,6 +20,7 @@ import mackey from "../images/stills/mackey.png";
 import maynard from "../images/stills/maynard.png";
 import teaser from "../images/stills/teaser.png";
 import stiltwalker from "../images/stills/stiltwalker.png";
+import alyssa from "../images/stills/alyssa.jpg";
 
 //partners
 import KCCF from "../images/partners/KCFF_logo-white.png";
@@ -178,6 +179,7 @@ class Main extends React.Component {
             <Still image={krolik} alt="krolik" />
             <Still image={mackey} alt="mackey" />
             <Still image={maynard} alt="maynard" />
+            <Still image={alyssa} alt="alyssa" />
           </Slider>
         </article>
 
@@ -196,6 +198,18 @@ class Main extends React.Component {
           <Still image={SPAF} alt="SPAF" />
           <Still image={City} alt="City" />
           <Still image={KAC} alt="KAC" />
+        </article>
+
+        <article
+          id="news"
+          className={`${this.props.article === "news" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
+          }`}
+          style={{ display: "none" }}
+        >
+          {close}
+          <h2 className="major">News</h2>
+          <p>News goes here</p>
         </article>
 
         <article

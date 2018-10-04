@@ -209,7 +209,9 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="major">News</h2>
-          <p>News goes here</p>
+          <ul>
+            <li>World Premiere at the 2019 <a href="kingcanfilmfest.com<">Kingston Canadian Film Festival</a><br/> February 28-March 3</li>
+          </ul>
         </article>
 
         <article

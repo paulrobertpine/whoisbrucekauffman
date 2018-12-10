@@ -10,7 +10,6 @@ import Still from "./Still";
 
 // about
 import wibkBlack from "../images/WIBK_Full_White.svg";
-import wibkPoster from "../images/wibk_poster.pdf";
 
 // stills
 import bruce from "../images/stills/bruce.png";
@@ -22,11 +21,14 @@ import alyssa from "../images/stills/alyssa.jpg";
 
 //partners
 import KCCF from "../images/partners/KCFF_logo-white.png";
-import KCCFLaurel from "../images/partners/2019_KCFF_Laurel.svg";
 import KWF from "../images/partners/KWF.png";
 import SPAF from "../images/partners/SPAF_logo.png";
 import City from "../images/partners/city-of-kingston-logo.jpg";
 import KAC from "../images/partners/KAC-Identity-Centered-BW.jpg";
+
+//news 
+import wibkPoster from "../images/wibk_poster.pdf";
+import KCCFLaurel from "../images/partners/2019_KCFF_Laurel.svg";
 
 
 const YouTubeOpts = {
@@ -77,7 +79,6 @@ class Main extends React.Component {
           <span className="image main">
             <img src={wibkBlack} alt="Who Is Bruce Kaufmann logo" />
           </span>
-          <p><a href={wibkPoster}>Download the poster</a></p>
           <p>
             Who Is Bruce Kauffman? is an anthology film that explores and
             celebrates Kingston, Ontario’s vibrant poetic community through the
@@ -146,7 +147,6 @@ class Main extends React.Component {
             <li>Nuno Ramalho</li>
             <li>Owen Fernley</li>
           </ul>
-          <img src={KCCFLaurel} alt="laurels" />
         </article>
 
         <article
@@ -208,9 +208,11 @@ class Main extends React.Component {
         >
           {close}
           <h2 className="major">News</h2>
+          <p><a href={wibkPoster}>Download the poster</a></p>
           <ul>
             <li>World Premiere at the 2019 <a href="kingcanfilmfest.com<">Kingston Canadian Film Festival</a><br/> February 28-March 3</li>
           </ul>
+          <img src={KCCFLaurel} alt="laurels" />
         </article>
 
         <article

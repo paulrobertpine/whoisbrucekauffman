@@ -10,24 +10,24 @@ import Still from "./Still";
 
 // about
 import wibkBlack from "../images/WIBK_Full_White.svg";
+import wibkPoster from "../images/wibk_poster.pdf";
 
 // stills
 import bruce from "../images/stills/bruce.png";
 import bruceWaterfront from "../images/stills/bruce-waterfront-still.jpg";
 import heroux from "../images/stills/heroux.jpg";
-import krolik from "../images/stills/krolik.png";
-import mackey from "../images/stills/mackey.png";
-import maynard from "../images/stills/maynard.png";
 import teaser from "../images/stills/teaser.png";
 import stiltwalker from "../images/stills/stiltwalker.png";
 import alyssa from "../images/stills/alyssa.jpg";
 
 //partners
 import KCCF from "../images/partners/KCFF_logo-white.png";
+import KCCFLaurel from "../images/partners/2019_KCFF_Laurel.svg";
 import KWF from "../images/partners/KWF.png";
 import SPAF from "../images/partners/SPAF_logo.png";
 import City from "../images/partners/city-of-kingston-logo.jpg";
 import KAC from "../images/partners/KAC-Identity-Centered-BW.jpg";
+
 
 const YouTubeOpts = {
   height: "370px",
@@ -77,6 +77,7 @@ class Main extends React.Component {
           <span className="image main">
             <img src={wibkBlack} alt="Who Is Bruce Kaufmann logo" />
           </span>
+          <p><a href={wibkPoster}>Download the poster</a></p>
           <p>
             Who Is Bruce Kauffman? is an anthology film that explores and
             celebrates Kingston, Ontario’s vibrant poetic community through the
@@ -119,12 +120,12 @@ class Main extends React.Component {
 
           <ul>
             <li>Alyssa Cooper</li>
-            <li>Armand Ruffo</li>
+            <li>Armand Garnet Ruffo</li>
             <li>Fernando Monte</li>
             <li>Helen Humphreys</li>
             <li>Jason Heroux </li>
             <li>Sadiqa de Meijer</li>
-            <li>Sarah Tsiang</li>
+            <li>Sarah Yi-Mei Tsiang</li>
             <li>Steven Heighton</li>
             <li>Wanda Praamsma</li>
           </ul>
@@ -145,6 +146,7 @@ class Main extends React.Component {
             <li>Nuno Ramalho</li>
             <li>Owen Fernley</li>
           </ul>
+          <img src={KCCFLaurel} alt="laurels" />
         </article>
 
         <article
@@ -176,9 +178,6 @@ class Main extends React.Component {
             <Still image={stiltwalker} alt="stiltwalker" />
             <Still image={bruceWaterfront} alt="bruceWaterfront" />
             <Still image={heroux} alt="heroux" />
-            <Still image={krolik} alt="krolik" />
-            <Still image={mackey} alt="mackey" />
-            <Still image={maynard} alt="maynard" />
             <Still image={alyssa} alt="alyssa" />
           </Slider>
         </article>

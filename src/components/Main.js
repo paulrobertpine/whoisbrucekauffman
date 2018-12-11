@@ -210,7 +210,7 @@ class Main extends React.Component {
           <h2 className="major">News</h2>
           <p><a href={wibkPoster}>Download the poster</a></p>
           <ul>
-            <li>World Premiere at the 2019 <a href="kingcanfilmfest.com<">Kingston Canadian Film Festival</a><br/> February 28-March 3</li>
+            <li>World Premiere at the 2019 <a href="kingcanfilmfest.com<">Kingston Canadian Film Festival</a><br/> 9pm Friday March 1st at The Isabel Bader Centre for the Performing Arts</li>
           </ul>
           <img src={KCCFLaurel} alt="laurels" />
         </article>

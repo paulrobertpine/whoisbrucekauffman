@@ -141,11 +141,10 @@ class Main extends React.Component {
             <li>Fernando Monte</li>
             <li>James Greatrex</li>
             <li>Josh Lyon</li>
-            <li>Julia Krolik</li>
+            <li>Julia Krolik & Owen Fernley</li>
             <li>Leigh Ann Bellamy</li>
             <li>Max Montalvo</li>
             <li>Nuno Ramalho</li>
-            <li>Owen Fernley</li>
           </ul>
         </article>
 

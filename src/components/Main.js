@@ -158,6 +158,7 @@ class Main extends React.Component {
           {close}
           <h2 className="major">Trailer</h2>
           <YouTube videoId="My5deiCdLvE" opts={YouTubeOpts} />
+          <YouTube videoId="pevr8mMnV1E" opts={YouTubeOpts} />
         </article>
 
         <article
